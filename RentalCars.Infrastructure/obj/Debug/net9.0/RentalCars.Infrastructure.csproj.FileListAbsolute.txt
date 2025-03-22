@@ -17,3 +17,4 @@ C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.pdb
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.genruntimeconfig.cache
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\ref\RentalCars.Infrastructure.dll
+C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.sourcelink.json

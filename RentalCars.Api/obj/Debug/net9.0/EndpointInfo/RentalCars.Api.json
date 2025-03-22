@@ -1147,6 +1147,44 @@
         }
       }
     },
+    "/api/vehiculos/filtrar": {
+      "get": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Filtrar vehículos",
+        "description": "Filtra los vehículos según la ubicación y el tipo de vehículo.",
+        "operationId": "FiltrarVehiculos",
+        "parameters": [
+          {
+            "name": "ubicacion",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tipoVehiculo",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/TipoDeVehiculo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/vehiculos/{id}/favoritos": {
       "post": {
         "tags": [
@@ -1481,6 +1519,18 @@
           }
         },
         "additionalProperties": false
+      },
+      "TipoDeVehiculo": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "UpdatePagoRequestDto": {
         "type": "object",

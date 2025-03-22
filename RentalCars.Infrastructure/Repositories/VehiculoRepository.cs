@@ -2,6 +2,7 @@
 using RentalCars.Domain.Entities;
 using RentalCars.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using RentalCars.Domain.Enums;
 
 namespace RentalCars.Infrastructure.Repositories;
 
@@ -50,34 +51,18 @@ public class VehiculoRepository : BaseRepository<Vehiculo>, IVehiculoRepository
     // Método que permite filtrar vehículos según varios parámetros (ubicación, precio, características).
     public async Task<IEnumerable<Vehiculo>> GetVehiculosByFiltersAsync(
         string? ubicacion = null,
-        decimal? minPrecio = null,
-        decimal? maxPrecio = null,
-        List<Guid>? caracteristicaIds = null
+        TipoDeVehiculo? tipoVehiculo = null
     )
     {
         var query = _dbSet.AsQueryable();
 
-        // Aplica filtro de ubicación si se proporciona.
         if (!string.IsNullOrEmpty(ubicacion))
             query = query.Where(v => v.Ubicacion.Contains(ubicacion));
 
-        // Aplica filtro de precio mínimo si se proporciona.
-        if (minPrecio.HasValue)
-            query = query.Where(v => v.PrecioPorDia >= minPrecio.Value);
+        if (tipoVehiculo.HasValue)
+            query = query.Where(v => v.Tipo == tipoVehiculo.Value);
 
-        // Aplica filtro de precio máximo si se proporciona.
-        if (maxPrecio.HasValue)
-            query = query.Where(v => v.PrecioPorDia <= maxPrecio.Value);
-
-        // Aplica filtro de características si se proporcionan.
-        if (caracteristicaIds?.Any() == true)
-            query = query.Where(v => v.VehiculoCaracteristicas
-                .Any(vc => caracteristicaIds.Contains(vc.CaracteristicaId)));
-
-        return await query
-            // .AsNoTracking()
-            .Include(v => v.Ubicacion)
-            .Include(v => v.VehiculoCaracteristicas)
-            .ToListAsync();
+        return await query.ToListAsync();
     }
+
 }

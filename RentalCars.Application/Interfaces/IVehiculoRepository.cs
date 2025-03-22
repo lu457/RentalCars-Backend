@@ -1,4 +1,5 @@
 ﻿using RentalCars.Domain.Entities;
+using RentalCars.Domain.Enums;
 
 namespace RentalCars.Application.Interfaces
 {
@@ -6,6 +7,6 @@ namespace RentalCars.Application.Interfaces
     {
         Task<IEnumerable<Vehiculo>> GetAvailableVehiculosAsync(DateTime startDate, DateTime endDate);
 
-        Task<IEnumerable<Vehiculo>> GetVehiculosByFiltersAsync(string? ubicacion = null, decimal? minPrecio = null, decimal? maxPrecio = null, List<Guid>? caracteristicaIds = null);
+        Task<IEnumerable<Vehiculo>> GetVehiculosByFiltersAsync(string? ubicacion = null, TipoDeVehiculo? tipoVehiculo = null);
     }
 }

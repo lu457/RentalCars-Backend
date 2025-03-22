@@ -967,7 +967,7 @@
   },
   {
     "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_4",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_5",
     "RelativePath": "api/vehiculos/{id}",
     "HttpMethod": "DELETE",
     "IsController": false,
@@ -995,7 +995,7 @@
   },
   {
     "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_5",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_6",
     "RelativePath": "api/vehiculos/{id}/favoritos",
     "HttpMethod": "POST",
     "IsController": false,
@@ -1023,7 +1023,7 @@
   },
   {
     "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_6",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_7",
     "RelativePath": "api/vehiculos/{id}/favoritos",
     "HttpMethod": "DELETE",
     "IsController": false,
@@ -1051,7 +1051,7 @@
   },
   {
     "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_7",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_8",
     "RelativePath": "api/vehiculos/{id}/favoritos",
     "HttpMethod": "GET",
     "IsController": false,
@@ -1079,7 +1079,7 @@
   },
   {
     "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
-    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_8",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_9",
     "RelativePath": "api/vehiculos/{id}/images",
     "HttpMethod": "POST",
     "IsController": false,
@@ -1102,5 +1102,38 @@
       "Vehiculos"
     ],
     "EndpointName": "UploadVehiculoImages"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_4",
+    "RelativePath": "api/vehiculos/filtrar",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ubicacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tipoVehiculo",
+        "Type": "System.Nullable\u00601[[RentalCars.Domain.Enums.TipoDeVehiculo, RentalCars.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "FiltrarVehiculos",
+    "Description": "Filtra los veh\u00EDculos seg\u00FAn la ubicaci\u00F3n y el tipo de veh\u00EDculo.",
+    "Summary": "Filtrar veh\u00EDculos"
   }
 ]

@@ -6,6 +6,7 @@ using RentalCars.Infrastructure.Extensions;
 using RentalCars.Application.Interfaces;
 using RentalCars.Infrastructure.Persistence;
 using RentalCars.Domain.Entities;
+using RentalCars.Domain.Enums;
 
 namespace RentalCars.Api.Endpoints;
 
@@ -109,6 +110,25 @@ public static class VehiculoEndpoints
         .WithSummary("Actualizar un vehículo")
         .WithDescription("Actualiza la información de un vehículo existente");
 
+        // GET: api/vehiculos/filtrar
+        group.MapGet("/filtrar", async (
+            [FromQuery] string? ubicacion,
+            [FromQuery] TipoDeVehiculo? tipoVehiculo,
+            [FromServices] IVehiculoService vehiculoService,
+            CancellationToken cancellationToken) =>
+        {
+            var result = await vehiculoService.FiltrarVehiculosAsync(ubicacion, tipoVehiculo, cancellationToken);
+
+            return result.IsSuccess
+                ? Results.Ok(result.Value)
+                : Results.BadRequest(new { error = result.Error });
+        })
+        .WithName("FiltrarVehiculos")
+        .WithOpenApi()
+        .WithSummary("Filtrar vehículos")
+        .WithDescription("Filtra los vehículos según la ubicación y el tipo de vehículo.");
+
+
         // DELETE: api/vehiculos/{id}
         group.MapDelete("/{id}", async (
             Guid id,
@@ -210,7 +230,7 @@ public static class VehiculoEndpoints
             }
 
             var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".webp" };
-            var maxFileSize = 5 * 1024 * 1024; // 5MB
+            var maxFileSize = 10 * 1024 * 1024;
             var uploadFolder = Path.Combine(env.WebRootPath, "uploads");
 
             if (!Directory.Exists(uploadFolder))
@@ -222,10 +242,22 @@ public static class VehiculoEndpoints
 
             try
             {
-                foreach (var file in files)
-                {
-                    var fileExtension = Path.GetExtension(file.FileName).ToLower();
+                // Obtener esPrincipal y asociarlo a cada archivo
+                var esPrincipalValues = context.Request.Form["esPrincipal"]
+                    .Select(val => val == "1")
+                    .ToList();
 
+                var fileList = files
+                    .Select((file, index) => new { File = file, EsPrincipal = esPrincipalValues.ElementAtOrDefault(index) })
+                    .OrderBy(x => x.EsPrincipal ? 1 : 0) 
+                    .ToList();
+
+                foreach (var item in fileList)
+                {
+                    var file = item.File;
+                    var esPrincipal = item.EsPrincipal;
+
+                    var fileExtension = Path.GetExtension(file.FileName).ToLower();
                     if (!allowedExtensions.Contains(fileExtension))
                     {
                         return Results.BadRequest(new { error = "Tipo de archivo no válido. Tipos permitidos: jpg, jpeg, png, webp" });
@@ -233,7 +265,7 @@ public static class VehiculoEndpoints
 
                     if (file.Length > maxFileSize)
                     {
-                        return Results.BadRequest(new { error = "El tamaño del archivo excede el límite de 5MB" });
+                        return Results.BadRequest(new { error = "El tamaño del archivo excede el límite de 10MB" });
                     }
 
                     var fileName = $"{Guid.NewGuid()}_{file.FileName}";
@@ -244,19 +276,14 @@ public static class VehiculoEndpoints
 
                     var fileUrl = $"/uploads/{fileName}";
 
-                    // Guardar en la base de datos
-                    var esPrincipal = context.Request.Form["esPrincipal"]
-                        .Select(val => val == "1")
-                        .ToList();
 
                     var imagenVehiculo = new ImagenVehiculo
                     {
                         Id = Guid.NewGuid(),
                         Url = fileUrl,
                         VehiculoId = id,
-                        EsPrincipal = esPrincipal.ElementAtOrDefault(savedFiles.Count) 
+                        EsPrincipal = esPrincipal
                     };
-
 
                     db.ImagenVehiculos.Add(imagenVehiculo);
                     savedFiles.Add(fileUrl);

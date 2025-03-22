@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RXC4Qzp+wD9fATCH4WwKRoMeGn9IjYY4w4W+WRBMqWU=",
+  "Hash": "fMblOD3ksrrZwbb7BIlpi4sGLzrD3MHZtsRiOeqDVgg=",
   "Source": "RentalCars.Api",
   "BasePath": "_content/RentalCars.Api",
   "Mode": "Default",
@@ -15,6 +15,317 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg",
+      "SourceId": "RentalCars.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\",
+      "BasePath": "_content/RentalCars.Api",
+      "RelativePath": "uploads/14f9bc7f-8fab-42bf-98a9-ced468048525_suv3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y2retj14ow",
+      "Integrity": "ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE+UbG+RAFgS8E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg",
+      "SourceId": "RentalCars.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\",
+      "BasePath": "_content/RentalCars.Api",
+      "RelativePath": "uploads/a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x0hyrj9slu",
+      "Integrity": "sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N+I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg",
+      "SourceId": "RentalCars.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\",
+      "BasePath": "_content/RentalCars.Api",
+      "RelativePath": "uploads/bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1om5pi26ns",
+      "Integrity": "/xwxxEod8Bj1MX0OZSZngssp+RIf4R7dTNyEpheTtrU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg",
+      "AssetFile": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "512010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE+UbG+RAFgS8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:00:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE+UbG+RAFgS8E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.y2retj14ow.jpg",
+      "AssetFile": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "512010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE+UbG+RAFgS8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:00:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y2retj14ow"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE+UbG+RAFgS8E="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg",
+      "AssetFile": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "818031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:00:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N+I="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.x0hyrj9slu.jpg",
+      "AssetFile": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "818031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N+I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:00:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x0hyrj9slu"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N+I="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.1om5pi26ns.jpg",
+      "AssetFile": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xwxxEod8Bj1MX0OZSZngssp+RIf4R7dTNyEpheTtrU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:00:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1om5pi26ns"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xwxxEod8Bj1MX0OZSZngssp+RIf4R7dTNyEpheTtrU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg",
+      "AssetFile": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "100971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xwxxEod8Bj1MX0OZSZngssp+RIf4R7dTNyEpheTtrU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:00:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xwxxEod8Bj1MX0OZSZngssp+RIf4R7dTNyEpheTtrU="
+        }
+      ]
+    }
+  ]
 }

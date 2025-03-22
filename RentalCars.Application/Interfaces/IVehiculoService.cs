@@ -1,5 +1,6 @@
 ﻿using RentalCars.Application.Common;
 using RentalCars.Application.DTOs.Vehiculos;
+using RentalCars.Domain.Enums;
 
 namespace RentalCars.Application.Interfaces
 {
@@ -16,5 +17,11 @@ namespace RentalCars.Application.Interfaces
         Task<Result<bool>> AgregarFavoritoAsync(Guid usuarioId, Guid vehiculoId, CancellationToken cancellationToken = default);
         Task<Result<bool>> RemoverFavoritoAsync(Guid usuarioId, Guid vehiculoId, CancellationToken cancellationToken = default);
         Task<Result<bool>> EsFavoritoAsync(Guid usuarioId, Guid vehiculoId, CancellationToken cancellationToken = default);
+
+        // Método para filtrar vehículos
+        Task<Result<List<VehiculoResponseDto>>> FiltrarVehiculosAsync(
+            string? ubicacion = null,
+            TipoDeVehiculo? tipoVehiculo = null,
+            CancellationToken cancellationToken = default);
     }
 }

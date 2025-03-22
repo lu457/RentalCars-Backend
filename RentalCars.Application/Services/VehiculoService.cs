@@ -5,6 +5,7 @@ using RentalCars.Application.Common;
 using RentalCars.Application.DTOs.Resenas;
 using RentalCars.Application.DTOs.Reservas;
 using RentalCars.Domain.ValueObjects;
+using RentalCars.Domain.Enums;
 
 namespace RentalCars.Application.Services;
         public class VehiculoService : IVehiculoService
@@ -123,6 +124,26 @@ namespace RentalCars.Application.Services;
         catch (Exception ex)
         {
             return Result<bool>.Failure(ex.Message);
+        }
+    }
+
+
+    public async Task<Result<List<VehiculoResponseDto>>> FiltrarVehiculosAsync(
+    string? ubicacion = null,
+    TipoDeVehiculo? tipoVehiculo = null,
+    CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            var vehiculos = await _vehiculoRepository.GetVehiculosByFiltersAsync(ubicacion, tipoVehiculo);
+
+            var vehiculoDtos = vehiculos.Select(MapToResponseDto).ToList();
+
+            return Result<List<VehiculoResponseDto>>.Success(vehiculoDtos);
+        }
+        catch (Exception ex)
+        {
+            return Result<List<VehiculoResponseDto>>.Failure(ex.Message);
         }
     }
 

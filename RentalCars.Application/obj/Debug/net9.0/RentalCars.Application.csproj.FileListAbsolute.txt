@@ -13,3 +13,4 @@ C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\Re
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\refint\RentalCars.Application.dll
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.pdb
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\ref\RentalCars.Application.dll
+C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.sourcelink.json

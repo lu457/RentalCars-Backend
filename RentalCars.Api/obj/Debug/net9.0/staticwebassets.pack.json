@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RentalCars.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RentalCars.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.RentalCars.Api.props",
+      "PackagePath": "build\\RentalCars.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.RentalCars.Api.props",
+      "PackagePath": "buildMultiTargeting\\RentalCars.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.RentalCars.Api.props",
+      "PackagePath": "buildTransitive\\RentalCars.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
