@@ -1,0 +1,1106 @@
+[
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapAuthEndpoints\u003Eb__0_0",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Auth.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Autenticaci\u00F3n"
+    ],
+    "EndpointName": "Login"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.AuthEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapAuthEndpoints\u003Eb__0_2",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Auth.RegisterRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Autenticaci\u00F3n"
+    ],
+    "EndpointName": "Registro",
+    "Description": "Registra un nuevo usuario en el sistema",
+    "Summary": "Registrar nuevo usuario"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.CaracteristicaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCaracteristicaEndpoints\u003Eb__0_0",
+    "RelativePath": "api/caracteristicas/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Caracter\u00EDsticas"
+    ],
+    "EndpointName": "GetAllCaracteristicas",
+    "Description": "Recupera todas las caracter\u00EDsticas disponibles en el sistema",
+    "Summary": "Obtener todas las caracter\u00EDsticas"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.CaracteristicaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCaracteristicaEndpoints\u003Eb__0_2",
+    "RelativePath": "api/caracteristicas/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createCaracteristicaDto",
+        "Type": "RentalCars.Application.DTOs.Caracteristicas.CreateCaracteristicaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Caracter\u00EDsticas"
+    ],
+    "EndpointName": "CreateCaracteristica",
+    "Description": "Crea una nueva caracter\u00EDstica con los detalles especificados",
+    "Summary": "Crear una nueva caracter\u00EDstica"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.CaracteristicaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCaracteristicaEndpoints\u003Eb__0_1",
+    "RelativePath": "api/caracteristicas/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Caracter\u00EDsticas"
+    ],
+    "EndpointName": "GetCaracteristicaById",
+    "Description": "Recupera una caracter\u00EDstica espec\u00EDfica por su ID",
+    "Summary": "Obtener una caracter\u00EDstica por ID"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.CaracteristicaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCaracteristicaEndpoints\u003Eb__0_4",
+    "RelativePath": "api/caracteristicas/{vehiculoId}/add/{caracteristicaId}",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "caracteristicaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Caracter\u00EDsticas"
+    ],
+    "EndpointName": "AddVehiculoCaracteristica",
+    "Description": "Asocia una caracter\u00EDstica espec\u00EDfica a un veh\u00EDculo por sus respectivos IDs",
+    "Summary": "Agregar una caracter\u00EDstica a un veh\u00EDculo"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.CaracteristicaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCaracteristicaEndpoints\u003Eb__0_5",
+    "RelativePath": "api/caracteristicas/{vehiculoId}/remove/{caracteristicaId}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "caracteristicaId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Caracter\u00EDsticas"
+    ],
+    "EndpointName": "RemoveVehiculoCaracteristica",
+    "Description": "Elimina la asociaci\u00F3n de una caracter\u00EDstica con un veh\u00EDculo por sus respectivos IDs",
+    "Summary": "Eliminar una caracter\u00EDstica de un veh\u00EDculo"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.CaracteristicaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCaracteristicaEndpoints\u003Eb__0_3",
+    "RelativePath": "api/caracteristicas/vehiculo/{vehiculoId}/caracteristicas",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Caracter\u00EDsticas"
+    ],
+    "EndpointName": "GetCaracteristicasByVehiculoId",
+    "Description": "Lista todas las caracter\u00EDsticas asociadas a un veh\u00EDculo por su ID",
+    "Summary": "Obtener caracter\u00EDsticas de un veh\u00EDculo"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.PagoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPagoEndpoints\u003Eb__0_0",
+    "RelativePath": "api/pagos/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Pagos"
+    ],
+    "EndpointName": "GetUserPagos",
+    "Description": "Recupera todos los pagos realizados por el usuario autenticado.",
+    "Summary": "Obtener pagos del usuario"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.PagoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPagoEndpoints\u003Eb__0_3",
+    "RelativePath": "api/pagos/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Pagos.CreatePagoRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Pagos"
+    ],
+    "EndpointName": "CreatePago",
+    "Description": "Registra un pago en el sistema para una reserva.",
+    "Summary": "Registrar un nuevo pago"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.PagoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPagoEndpoints\u003Eb__0_2",
+    "RelativePath": "api/pagos/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Pagos"
+    ],
+    "EndpointName": "GetPagoById",
+    "Description": "Recupera un pago espec\u00EDfico por su ID, validando permisos.",
+    "Summary": "Obtener un pago por ID"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.PagoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPagoEndpoints\u003Eb__0_5",
+    "RelativePath": "api/pagos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Pagos"
+    ],
+    "EndpointName": "CancelPago",
+    "Description": "Permite al usuario cancelar un pago si a\u00FAn est\u00E1 en estado Pendiente.",
+    "Summary": "Cancelar un pago"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.PagoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPagoEndpoints\u003Eb__0_4",
+    "RelativePath": "api/pagos/{id}/estado",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Pagos.UpdatePagoRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Pagos"
+    ],
+    "EndpointName": "UpdatePagoEstado",
+    "Description": "Permite al propietario aprobar o rechazar un pago.",
+    "Summary": "Actualizar estado de un pago"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.PagoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapPagoEndpoints\u003Eb__0_1",
+    "RelativePath": "api/pagos/propietario",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Pagos"
+    ],
+    "EndpointName": "GetPagosByPropietario",
+    "Description": "Obtiene todos los pagos de reservas asociadas a los veh\u00EDculos del propietario autenticado.",
+    "Summary": "Obtener pagos de reservas de un propietario"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReglaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReglaEndpoints\u003Eb__0_0",
+    "RelativePath": "api/reglas/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reglas"
+    ],
+    "EndpointName": "GetAllReglas",
+    "Description": "Recupera todas las reglas disponibles en el sistema",
+    "Summary": "Obtener todas las reglas"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReglaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReglaEndpoints\u003Eb__0_2",
+    "RelativePath": "api/reglas/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createReglaDto",
+        "Type": "RentalCars.Application.DTOs.Reglas.CreateReglaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reglas"
+    ],
+    "EndpointName": "CreateRegla",
+    "Description": "Crea una nueva regla con los detalles especificados",
+    "Summary": "Crear una nueva regla"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReglaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReglaEndpoints\u003Eb__0_1",
+    "RelativePath": "api/reglas/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reglas"
+    ],
+    "EndpointName": "GetReglaById",
+    "Description": "Recupera una regla espec\u00EDfica por su ID",
+    "Summary": "Obtener una regla por ID"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ResenaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapResenaEndpoints\u003Eb__0_2",
+    "RelativePath": "api/resenas/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Resenas.CreateResenaRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Rese\u00F1as"
+    ],
+    "EndpointName": "CreateResena",
+    "Description": "Crea una nueva rese\u00F1a para un veh\u00EDculo",
+    "Summary": "Crear una nueva rese\u00F1a"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ResenaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapResenaEndpoints\u003Eb__0_1",
+    "RelativePath": "api/resenas/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Rese\u00F1as"
+    ],
+    "EndpointName": "GetResena",
+    "Description": "Recupera una rese\u00F1a espec\u00EDfica por su ID",
+    "Summary": "Obtener una rese\u00F1a por ID"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ResenaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapResenaEndpoints\u003Eb__0_3",
+    "RelativePath": "api/resenas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Rese\u00F1as"
+    ],
+    "EndpointName": "DeleteResena",
+    "Description": "Elimina una rese\u00F1a existente",
+    "Summary": "Eliminar una rese\u00F1a"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ResenaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapResenaEndpoints\u003Eb__0_0",
+    "RelativePath": "api/resenas/vehiculo/{vehiculoId}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculoId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Rese\u00F1as"
+    ],
+    "EndpointName": "GetResenasVehiculo",
+    "Description": "Recupera todas las rese\u00F1as asociadas a un veh\u00EDculo espec\u00EDfico",
+    "Summary": "Obtener rese\u00F1as de un veh\u00EDculo"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReservaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReservaEndpoints\u003Eb__0_0",
+    "RelativePath": "api/reservas/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reservas"
+    ],
+    "EndpointName": "GetUserReservas",
+    "Description": "Recupera todas las reservas del usuario actual",
+    "Summary": "Obtener reservas del usuario"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReservaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReservaEndpoints\u003Eb__0_2",
+    "RelativePath": "api/reservas/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Reservas.CreateReservaRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reservas"
+    ],
+    "EndpointName": "CreateReserva",
+    "Description": "Crea una nueva reserva para un veh\u00EDculo",
+    "Summary": "Crear una nueva reserva"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReservaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReservaEndpoints\u003Eb__0_1",
+    "RelativePath": "api/reservas/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reservas"
+    ],
+    "EndpointName": "GetReserva",
+    "Description": "Recupera una reserva espec\u00EDfica por su ID",
+    "Summary": "Obtener una reserva por ID"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReservaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReservaEndpoints\u003Eb__0_4",
+    "RelativePath": "api/reservas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reservas"
+    ],
+    "EndpointName": "CancelReserva",
+    "Description": "Cancela una reserva existente",
+    "Summary": "Cancelar una reserva"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.ReservaEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapReservaEndpoints\u003Eb__0_3",
+    "RelativePath": "api/reservas/{id}/estado",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Reservas.UpdateReservaRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Reservas"
+    ],
+    "EndpointName": "UpdateReservaEstado",
+    "Description": "Actualiza el estado de una reserva existente",
+    "Summary": "Actualizar estado de una reserva"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.SancionEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSancionEndpoints\u003Eb__0_0",
+    "RelativePath": "api/sanciones/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Sanciones"
+    ],
+    "EndpointName": "GetSancionesActivas",
+    "Description": "Recupera todas las sanciones pendientes en el sistema",
+    "Summary": "Obtener sanciones activas"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.SancionEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSancionEndpoints\u003Eb__0_2",
+    "RelativePath": "api/sanciones/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Sanciones.CreateSancionRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Sanciones"
+    ],
+    "EndpointName": "CreateSancion",
+    "Description": "Crea una sanci\u00F3n para una reserva espec\u00EDfica",
+    "Summary": "Registrar una nueva sanci\u00F3n"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.SancionEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSancionEndpoints\u003Eb__0_1",
+    "RelativePath": "api/sanciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Sanciones"
+    ],
+    "EndpointName": "GetSancion",
+    "Description": "Recupera una sanci\u00F3n espec\u00EDfica por su ID",
+    "Summary": "Obtener una sanci\u00F3n por ID"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.SancionEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSancionEndpoints\u003Eb__0_4",
+    "RelativePath": "api/sanciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Sanciones"
+    ],
+    "EndpointName": "DeleteSancion",
+    "Description": "Elimina una sanci\u00F3n del sistema",
+    "Summary": "Eliminar una sanci\u00F3n"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.SancionEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapSancionEndpoints\u003Eb__0_3",
+    "RelativePath": "api/sanciones/{id}/estado",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Sanciones.UpdateSancionRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Sanciones"
+    ],
+    "EndpointName": "UpdateSancionEstado",
+    "Description": "Modifica el estado de una sanci\u00F3n existente",
+    "Summary": "Actualizar estado de una sanci\u00F3n"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_0",
+    "RelativePath": "api/vehiculos/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "GetVehiculos",
+    "Description": "Recupera una lista de todos los veh\u00EDculos disponibles",
+    "Summary": "Obtener todos los veh\u00EDculos"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_2",
+    "RelativePath": "api/vehiculos/",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Vehiculos.CreateVehiculoRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "CreateVehiculo",
+    "Description": "Crea un nuevo veh\u00EDculo en el sistema",
+    "Summary": "Registrar un nuevo veh\u00EDculo"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_1",
+    "RelativePath": "api/vehiculos/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "GetVehiculo",
+    "Description": "Recupera un veh\u00EDculo espec\u00EDfico por su ID",
+    "Summary": "Obtener un veh\u00EDculo por ID"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_3",
+    "RelativePath": "api/vehiculos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "RentalCars.Application.DTOs.Vehiculos.UpdateVehiculoRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "UpdateVehiculo",
+    "Description": "Actualiza la informaci\u00F3n de un veh\u00EDculo existente",
+    "Summary": "Actualizar un veh\u00EDculo"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_4",
+    "RelativePath": "api/vehiculos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "DeleteVehiculo",
+    "Description": "Elimina un veh\u00EDculo registrado en el sistema",
+    "Summary": "Eliminar un veh\u00EDculo"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_5",
+    "RelativePath": "api/vehiculos/{id}/favoritos",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "AgregarVehiculoFavorito",
+    "Description": "Permite al usuario agregar un veh\u00EDculo a su lista de favoritos.",
+    "Summary": "Agregar un veh\u00EDculo a favoritos"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_6",
+    "RelativePath": "api/vehiculos/{id}/favoritos",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "RemoverVehiculoFavorito",
+    "Description": "Permite al usuario eliminar un veh\u00EDculo de su lista de favoritos.",
+    "Summary": "Remover un veh\u00EDculo de favoritos"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_7",
+    "RelativePath": "api/vehiculos/{id}/favoritos",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "EsVehiculoFavorito",
+    "Description": "Permite al usuario verificar si un veh\u00EDculo est\u00E1 en su lista de favoritos.",
+    "Summary": "Verificar si un veh\u00EDculo est\u00E1 en favoritos"
+  },
+  {
+    "ContainingType": "RentalCars.Api.Endpoints.VehiculoEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapVehiculoEndpoints\u003Eb__0_8",
+    "RelativePath": "api/vehiculos/{id}/images",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Vehiculos"
+    ],
+    "EndpointName": "UploadVehiculoImages"
+  }
+]

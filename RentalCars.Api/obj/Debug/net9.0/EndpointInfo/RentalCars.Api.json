@@ -1,0 +1,1616 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RentalCars API",
+    "description": "API para el sistema de alquiler de vehículos",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/auth/login": {
+      "post": {
+        "tags": [
+          "Autenticación"
+        ],
+        "summary": "Autenticar usuario",
+        "description": "Autentica un usuario y devuelve un token JWT para solicitudes posteriores.",
+        "operationId": "Login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequestDto"
+              },
+              "example": "{\"email\": \"juanperez@example.com\", \"contraseña\": \"superchichico\"}"
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                },
+                "example": {
+                  "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+                  "ExpiresIn": 3600
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/register": {
+      "post": {
+        "tags": [
+          "Autenticación"
+        ],
+        "summary": "Registrar nuevo usuario",
+        "description": "Registra un nuevo usuario en el sistema",
+        "operationId": "Registro",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/caracteristicas": {
+      "get": {
+        "tags": [
+          "Características"
+        ],
+        "summary": "Obtener todas las características",
+        "description": "Recupera todas las características disponibles en el sistema",
+        "operationId": "GetAllCaracteristicas",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Características"
+        ],
+        "summary": "Crear una nueva característica",
+        "description": "Crea una nueva característica con los detalles especificados",
+        "operationId": "CreateCaracteristica",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateCaracteristicaDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/caracteristicas/{id}": {
+      "get": {
+        "tags": [
+          "Características"
+        ],
+        "summary": "Obtener una característica por ID",
+        "description": "Recupera una característica específica por su ID",
+        "operationId": "GetCaracteristicaById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/caracteristicas/vehiculo/{vehiculoId}/caracteristicas": {
+      "get": {
+        "tags": [
+          "Características"
+        ],
+        "summary": "Obtener características de un vehículo",
+        "description": "Lista todas las características asociadas a un vehículo por su ID",
+        "operationId": "GetCaracteristicasByVehiculoId",
+        "parameters": [
+          {
+            "name": "vehiculoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/caracteristicas/{vehiculoId}/add/{caracteristicaId}": {
+      "post": {
+        "tags": [
+          "Características"
+        ],
+        "summary": "Agregar una característica a un vehículo",
+        "description": "Asocia una característica específica a un vehículo por sus respectivos IDs",
+        "operationId": "AddVehiculoCaracteristica",
+        "parameters": [
+          {
+            "name": "vehiculoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "caracteristicaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/caracteristicas/{vehiculoId}/remove/{caracteristicaId}": {
+      "delete": {
+        "tags": [
+          "Características"
+        ],
+        "summary": "Eliminar una característica de un vehículo",
+        "description": "Elimina la asociación de una característica con un vehículo por sus respectivos IDs",
+        "operationId": "RemoveVehiculoCaracteristica",
+        "parameters": [
+          {
+            "name": "vehiculoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "caracteristicaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/pagos": {
+      "get": {
+        "tags": [
+          "Pagos"
+        ],
+        "summary": "Obtener pagos del usuario",
+        "description": "Recupera todos los pagos realizados por el usuario autenticado.",
+        "operationId": "GetUserPagos",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Pagos"
+        ],
+        "summary": "Registrar un nuevo pago",
+        "description": "Registra un pago en el sistema para una reserva.",
+        "operationId": "CreatePago",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePagoRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/pagos/propietario": {
+      "get": {
+        "tags": [
+          "Pagos"
+        ],
+        "summary": "Obtener pagos de reservas de un propietario",
+        "description": "Obtiene todos los pagos de reservas asociadas a los vehículos del propietario autenticado.",
+        "operationId": "GetPagosByPropietario",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/pagos/{id}": {
+      "get": {
+        "tags": [
+          "Pagos"
+        ],
+        "summary": "Obtener un pago por ID",
+        "description": "Recupera un pago específico por su ID, validando permisos.",
+        "operationId": "GetPagoById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Pagos"
+        ],
+        "summary": "Cancelar un pago",
+        "description": "Permite al usuario cancelar un pago si aún está en estado Pendiente.",
+        "operationId": "CancelPago",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/pagos/{id}/estado": {
+      "put": {
+        "tags": [
+          "Pagos"
+        ],
+        "summary": "Actualizar estado de un pago",
+        "description": "Permite al propietario aprobar o rechazar un pago.",
+        "operationId": "UpdatePagoEstado",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePagoRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/reglas": {
+      "get": {
+        "tags": [
+          "Reglas"
+        ],
+        "summary": "Obtener todas las reglas",
+        "description": "Recupera todas las reglas disponibles en el sistema",
+        "operationId": "GetAllReglas",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Reglas"
+        ],
+        "summary": "Crear una nueva regla",
+        "description": "Crea una nueva regla con los detalles especificados",
+        "operationId": "CreateRegla",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReglaDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/reglas/{id}": {
+      "get": {
+        "tags": [
+          "Reglas"
+        ],
+        "summary": "Obtener una regla por ID",
+        "description": "Recupera una regla específica por su ID",
+        "operationId": "GetReglaById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/resenas/vehiculo/{vehiculoId}": {
+      "get": {
+        "tags": [
+          "Reseñas"
+        ],
+        "summary": "Obtener reseñas de un vehículo",
+        "description": "Recupera todas las reseñas asociadas a un vehículo específico",
+        "operationId": "GetResenasVehiculo",
+        "parameters": [
+          {
+            "name": "vehiculoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/resenas/{id}": {
+      "get": {
+        "tags": [
+          "Reseñas"
+        ],
+        "summary": "Obtener una reseña por ID",
+        "description": "Recupera una reseña específica por su ID",
+        "operationId": "GetResena",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Reseñas"
+        ],
+        "summary": "Eliminar una reseña",
+        "description": "Elimina una reseña existente",
+        "operationId": "DeleteResena",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/resenas": {
+      "post": {
+        "tags": [
+          "Reseñas"
+        ],
+        "summary": "Crear una nueva reseña",
+        "description": "Crea una nueva reseña para un vehículo",
+        "operationId": "CreateResena",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateResenaRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/reservas": {
+      "get": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Obtener reservas del usuario",
+        "description": "Recupera todas las reservas del usuario actual",
+        "operationId": "GetUserReservas",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Crear una nueva reserva",
+        "description": "Crea una nueva reserva para un vehículo",
+        "operationId": "CreateReserva",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateReservaRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/reservas/{id}": {
+      "get": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Obtener una reserva por ID",
+        "description": "Recupera una reserva específica por su ID",
+        "operationId": "GetReserva",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Cancelar una reserva",
+        "description": "Cancela una reserva existente",
+        "operationId": "CancelReserva",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/reservas/{id}/estado": {
+      "put": {
+        "tags": [
+          "Reservas"
+        ],
+        "summary": "Actualizar estado de una reserva",
+        "description": "Actualiza el estado de una reserva existente",
+        "operationId": "UpdateReservaEstado",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateReservaRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sanciones": {
+      "get": {
+        "tags": [
+          "Sanciones"
+        ],
+        "summary": "Obtener sanciones activas",
+        "description": "Recupera todas las sanciones pendientes en el sistema",
+        "operationId": "GetSancionesActivas",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Sanciones"
+        ],
+        "summary": "Registrar una nueva sanción",
+        "description": "Crea una sanción para una reserva específica",
+        "operationId": "CreateSancion",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSancionRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sanciones/{id}": {
+      "get": {
+        "tags": [
+          "Sanciones"
+        ],
+        "summary": "Obtener una sanción por ID",
+        "description": "Recupera una sanción específica por su ID",
+        "operationId": "GetSancion",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Sanciones"
+        ],
+        "summary": "Eliminar una sanción",
+        "description": "Elimina una sanción del sistema",
+        "operationId": "DeleteSancion",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sanciones/{id}/estado": {
+      "put": {
+        "tags": [
+          "Sanciones"
+        ],
+        "summary": "Actualizar estado de una sanción",
+        "description": "Modifica el estado de una sanción existente",
+        "operationId": "UpdateSancionEstado",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSancionRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/vehiculos": {
+      "get": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Obtener todos los vehículos",
+        "description": "Recupera una lista de todos los vehículos disponibles",
+        "operationId": "GetVehiculos",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Registrar un nuevo vehículo",
+        "description": "Crea un nuevo vehículo en el sistema",
+        "operationId": "CreateVehiculo",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateVehiculoRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/vehiculos/{id}": {
+      "get": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Obtener un vehículo por ID",
+        "description": "Recupera un vehículo específico por su ID",
+        "operationId": "GetVehiculo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Actualizar un vehículo",
+        "description": "Actualiza la información de un vehículo existente",
+        "operationId": "UpdateVehiculo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateVehiculoRequestDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Eliminar un vehículo",
+        "description": "Elimina un vehículo registrado en el sistema",
+        "operationId": "DeleteVehiculo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/vehiculos/{id}/favoritos": {
+      "post": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Agregar un vehículo a favoritos",
+        "description": "Permite al usuario agregar un vehículo a su lista de favoritos.",
+        "operationId": "AgregarVehiculoFavorito",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Remover un vehículo de favoritos",
+        "description": "Permite al usuario eliminar un vehículo de su lista de favoritos.",
+        "operationId": "RemoverVehiculoFavorito",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Verificar si un vehículo está en favoritos",
+        "description": "Permite al usuario verificar si un vehículo está en su lista de favoritos.",
+        "operationId": "EsVehiculoFavorito",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/vehiculos/{id}/images": {
+      "post": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "operationId": "UploadVehiculoImages",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateCaracteristicaDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePagoRequestDto": {
+        "type": "object",
+        "properties": {
+          "reservaId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "metodoPago": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateReglaDto": {
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateResenaRequestDto": {
+        "type": "object",
+        "properties": {
+          "comentario": {
+            "type": "string",
+            "nullable": true
+          },
+          "calificacion": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vehiculoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "reservaId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateReservaRequestDto": {
+        "type": "object",
+        "properties": {
+          "fechaInicio": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaFin": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "comentario": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehiculoId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSancionRequestDto": {
+        "type": "object",
+        "properties": {
+          "motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "reservaId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateVehiculoRequestDto": {
+        "type": "object",
+        "properties": {
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "precioPorDia": {
+            "type": "number",
+            "format": "double"
+          },
+          "calle": {
+            "type": "string",
+            "nullable": true
+          },
+          "ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "pais": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "motor": {
+            "type": "string",
+            "nullable": true
+          },
+          "cilindros": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "puertas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "capacidadPasajeros": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "combustible": {
+            "type": "string",
+            "nullable": true
+          },
+          "transmision": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequestDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "contraseña": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterRequestDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "contraseña": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "celular": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePagoRequestDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateReservaRequestDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateSancionRequestDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateVehiculoRequestDto": {
+        "type": "object",
+        "properties": {
+          "marca": {
+            "type": "string",
+            "nullable": true
+          },
+          "modelo": {
+            "type": "string",
+            "nullable": true
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "precioPorDia": {
+            "type": "number",
+            "format": "double"
+          },
+          "calle": {
+            "type": "string",
+            "nullable": true
+          },
+          "ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "pais": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "motor": {
+            "type": "string",
+            "nullable": true
+          },
+          "cilindros": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "puertas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "capacidadPasajeros": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "combustible": {
+            "type": "string",
+            "nullable": true
+          },
+          "transmision": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Void": {
+        "type": "object",
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header usando el esquema Bearer. Ejemplo: \"Authorization: Bearer {token}\"",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

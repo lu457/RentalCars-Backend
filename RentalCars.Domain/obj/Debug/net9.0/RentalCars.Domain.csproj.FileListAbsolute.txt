@@ -1,0 +1,11 @@
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\bin\Debug\net9.0\RentalCars.Domain.deps.json
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\bin\Debug\net9.0\RentalCars.Domain.dll
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\bin\Debug\net9.0\RentalCars.Domain.pdb
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.AssemblyInfoInputs.cache
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.AssemblyInfo.cs
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.csproj.CoreCompileInputs.cache
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.dll
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\refint\RentalCars.Domain.dll
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.pdb
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\ref\RentalCars.Domain.dll

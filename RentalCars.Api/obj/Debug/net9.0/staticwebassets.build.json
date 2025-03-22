@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "RXC4Qzp+wD9fATCH4WwKRoMeGn9IjYY4w4W+WRBMqWU=",
+  "Source": "RentalCars.Api",
+  "BasePath": "_content/RentalCars.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RentalCars.Api\\wwwroot",
+      "Source": "RentalCars.Api",
+      "ContentRoot": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\",
+      "BasePath": "_content/RentalCars.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}
