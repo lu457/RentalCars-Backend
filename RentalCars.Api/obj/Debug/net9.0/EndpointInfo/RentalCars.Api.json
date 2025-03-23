@@ -1185,6 +1185,28 @@
         }
       }
     },
+    "/api/vehiculos/propietario": {
+      "get": {
+        "tags": [
+          "Vehiculos"
+        ],
+        "summary": "Obtener vehículos por propietario",
+        "description": "Recupera todos los vehículos asociados al propietario autenticado",
+        "operationId": "GetVehiculosByPropietario",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Void"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/vehiculos/{id}/favoritos": {
       "post": {
         "tags": [

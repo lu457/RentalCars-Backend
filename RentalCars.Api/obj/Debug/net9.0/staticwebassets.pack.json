@@ -1,16 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg",
-      "PackagePath": "staticwebassets\\uploads\\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg"
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\6108bc67-b759-45e8-9f0b-fd4f4d3ac1b1_3.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\6108bc67-b759-45e8-9f0b-fd4f4d3ac1b1_3.jpeg"
     },
     {
-      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg",
-      "PackagePath": "staticwebassets\\uploads\\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg"
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\621913f8-ba56-4d85-b6e0-6b9d7f11dc88_coche1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\621913f8-ba56-4d85-b6e0-6b9d7f11dc88_coche1.jpg"
     },
     {
-      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg",
-      "PackagePath": "staticwebassets\\uploads\\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg"
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\cb0997af-34e5-4f67-95b5-8c975e25c766_suv2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cb0997af-34e5-4f67-95b5-8c975e25c766_suv2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\e37a674d-d116-4ef5-8f25-e825362db916_suv1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e37a674d-d116-4ef5-8f25-e825362db916_suv1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\e8be5b9d-dc44-4ac2-9844-be5db4043e98_suv1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e8be5b9d-dc44-4ac2-9844-be5db4043e98_suv1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\luis\\source\\repos\\RentalCars\\RentalCars.Api\\wwwroot\\uploads\\f0a03a60-78bc-4611-a7c9-adc2957bb772_suv3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f0a03a60-78bc-4611-a7c9-adc2957bb772_suv3.jpg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RentalCars.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

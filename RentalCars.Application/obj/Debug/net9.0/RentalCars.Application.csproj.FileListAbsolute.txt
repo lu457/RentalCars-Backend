@@ -8,9 +8,9 @@ C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\Re
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.AssemblyInfoInputs.cache
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.AssemblyInfo.cs
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.csproj.CoreCompileInputs.cache
+C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.sourcelink.json
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCa.F6796EA4.Up2Date
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.dll
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\refint\RentalCars.Application.dll
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.pdb
 C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\ref\RentalCars.Application.dll
-C:\Users\luis\source\repos\RentalCars\RentalCars.Application\obj\Debug\net9.0\RentalCars.Application.sourcelink.json

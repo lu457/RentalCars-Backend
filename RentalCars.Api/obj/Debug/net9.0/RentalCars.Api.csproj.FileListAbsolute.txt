@@ -162,6 +162,7 @@ C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars.Api.csproj.CoreCompileInputs.cache
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars.Api.sourcelink.json
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\scopedcss\bundle\RentalCars.Api.styles.css
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\staticwebassets.development.json
@@ -179,4 +180,3 @@ C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\refint\Ren
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars.Api.pdb
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars.Api.genruntimeconfig.cache
 C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\ref\RentalCars.Api.dll
-C:\Users\luis\source\repos\RentalCars\RentalCars.Api\obj\Debug\net9.0\RentalCars.Api.sourcelink.json

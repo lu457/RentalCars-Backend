@@ -39,7 +39,7 @@ public class VehiculoRepository : BaseRepository<Vehiculo>, IVehiculoRepository
     public override async Task<Vehiculo?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await _dbSet
-          // .AsNoTracking()
+           .AsNoTracking()
             .Include(v => v.Propietario)
             .Include(v => v.Resenas)
             .ThenInclude(r => r.Critico)
@@ -54,7 +54,7 @@ public class VehiculoRepository : BaseRepository<Vehiculo>, IVehiculoRepository
         TipoDeVehiculo? tipoVehiculo = null
     )
     {
-        var query = _dbSet.AsQueryable();
+        var query = _dbSet.Include(v => v.Images).AsQueryable();
 
         if (!string.IsNullOrEmpty(ubicacion))
             query = query.Where(v => v.Ubicacion.Contains(ubicacion));
@@ -64,5 +64,17 @@ public class VehiculoRepository : BaseRepository<Vehiculo>, IVehiculoRepository
 
         return await query.ToListAsync();
     }
+
+    // Método para obtener vehículos por propietario
+    public async Task<IEnumerable<Vehiculo>> GetVehiculosByPropietarioAsync(Guid propietarioId)
+    {
+        return await _dbSet
+            .Where(v => v.PropietarioId == propietarioId) // Filtra por propietario
+            .Include(v => v.Images)
+            .Include(v => v.Resenas)
+            .Include(v => v.Reservas)
+            .ToListAsync();
+    }
+
 
 }

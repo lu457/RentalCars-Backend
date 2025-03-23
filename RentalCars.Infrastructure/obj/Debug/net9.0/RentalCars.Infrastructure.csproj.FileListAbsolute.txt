@@ -11,10 +11,10 @@ C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.AssemblyInfo.cs
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.sourcelink.json
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCa.960F158B.Up2Date
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.dll
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\refint\RentalCars.Infrastructure.dll
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.pdb
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.genruntimeconfig.cache
 C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\ref\RentalCars.Infrastructure.dll
-C:\Users\luis\source\repos\RentalCars\RentalCars.Infrastructure\obj\Debug\net9.0\RentalCars.Infrastructure.sourcelink.json

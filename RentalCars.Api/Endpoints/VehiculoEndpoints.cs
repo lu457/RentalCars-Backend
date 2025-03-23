@@ -129,6 +129,27 @@ public static class VehiculoEndpoints
         .WithDescription("Filtra los vehículos según la ubicación y el tipo de vehículo.");
 
 
+
+        // GET: api/vehiculos/propietario
+        group.MapGet("/propietario", async (
+            ClaimsPrincipal user,
+            [FromServices] IVehiculoService vehiculoService,
+            CancellationToken cancellationToken) =>
+        {
+            var propietarioId = user.GetUsuarioId();
+            var result = await vehiculoService.GetVehiculosByPropietarioAsync(propietarioId, cancellationToken);
+
+            return result.IsSuccess
+                ? Results.Ok(result.Value)
+                : Results.BadRequest(new { error = result.Error });
+        })
+        .RequireAuthorization()
+        .WithName("GetVehiculosByPropietario")
+        .WithOpenApi()
+        .WithSummary("Obtener vehículos por propietario")
+        .WithDescription("Recupera todos los vehículos asociados al propietario autenticado");
+
+
         // DELETE: api/vehiculos/{id}
         group.MapDelete("/{id}", async (
             Guid id,
@@ -249,7 +270,8 @@ public static class VehiculoEndpoints
 
                 var fileList = files
                     .Select((file, index) => new { File = file, EsPrincipal = esPrincipalValues.ElementAtOrDefault(index) })
-                    .OrderBy(x => x.EsPrincipal ? 1 : 0) 
+                    .OrderBy(x => x.EsPrincipal ? 1 : 0)
+
                     .ToList();
 
                 foreach (var item in fileList)

@@ -23,5 +23,10 @@ namespace RentalCars.Application.Interfaces
             string? ubicacion = null,
             TipoDeVehiculo? tipoVehiculo = null,
             CancellationToken cancellationToken = default);
+
+            // Método para obtener vehículos por propietario
+        Task<Result<List<VehiculoResponseDto>>> GetVehiculosByPropietarioAsync(
+            Guid propietarioId,
+            CancellationToken cancellationToken = default);
     }
 }

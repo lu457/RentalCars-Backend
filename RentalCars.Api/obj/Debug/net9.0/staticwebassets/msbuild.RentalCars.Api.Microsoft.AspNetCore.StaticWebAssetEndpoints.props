@@ -1,40 +1,76 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/6108bc67-b759-45e8-9f0b-fd4f4d3ac1b1_3.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6108bc67-b759-45e8-9f0b-fd4f4d3ac1b1_3.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"512010"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 06:00:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KwQEq03zcPkmdczwkKvkCKU4okCkeqMC\u002Bh6yCiTsp7w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"16956"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KwQEq03zcPkmdczwkKvkCKU4okCkeqMC\u002Bh6yCiTsp7w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:53:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.y2retj14ow.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/6108bc67-b759-45e8-9f0b-fd4f4d3ac1b1_3.ntcda27qlx.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6108bc67-b759-45e8-9f0b-fd4f4d3ac1b1_3.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y2retj14ow"},{"Name":"integrity","Value":"sha256-ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/14f9bc7f-8fab-42bf-98a9-ced468048525_suv3.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"512010"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 06:00:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ntcda27qlx"},{"Name":"integrity","Value":"sha256-KwQEq03zcPkmdczwkKvkCKU4okCkeqMC\u002Bh6yCiTsp7w="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/6108bc67-b759-45e8-9f0b-fd4f4d3ac1b1_3.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16956"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KwQEq03zcPkmdczwkKvkCKU4okCkeqMC\u002Bh6yCiTsp7w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:53:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/621913f8-ba56-4d85-b6e0-6b9d7f11dc88_coche1.bkw6m3m7up.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\621913f8-ba56-4d85-b6e0-6b9d7f11dc88_coche1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bkw6m3m7up"},{"Name":"integrity","Value":"sha256-pTMWS4QHcC\u002BQCU8JeGHkbqtfb9zGgUGojk1xjKhrPKg="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/621913f8-ba56-4d85-b6e0-6b9d7f11dc88_coche1.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"526403"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pTMWS4QHcC\u002BQCU8JeGHkbqtfb9zGgUGojk1xjKhrPKg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:45:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/621913f8-ba56-4d85-b6e0-6b9d7f11dc88_coche1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\621913f8-ba56-4d85-b6e0-6b9d7f11dc88_coche1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pTMWS4QHcC\u002BQCU8JeGHkbqtfb9zGgUGojk1xjKhrPKg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"526403"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022pTMWS4QHcC\u002BQCU8JeGHkbqtfb9zGgUGojk1xjKhrPKg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:45:02 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/cb0997af-34e5-4f67-95b5-8c975e25c766_suv2.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\cb0997af-34e5-4f67-95b5-8c975e25c766_suv2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N\u002BI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"818031"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N\u002BI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 06:00:57 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"818031"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N\u002BI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:28:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.x0hyrj9slu.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/cb0997af-34e5-4f67-95b5-8c975e25c766_suv2.x0hyrj9slu.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\cb0997af-34e5-4f67-95b5-8c975e25c766_suv2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x0hyrj9slu"},{"Name":"integrity","Value":"sha256-sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N\u002BI="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/a285ef18-8835-4ba8-ae5f-c9158cff91ec_suv2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"818031"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N\u002BI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 06:00:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x0hyrj9slu"},{"Name":"integrity","Value":"sha256-sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N\u002BI="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/cb0997af-34e5-4f67-95b5-8c975e25c766_suv2.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"818031"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022sUFK2v4uFNtVVG3VSrIpm1dTIafthFFXkU9aFwU0N\u002BI=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:28:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.1om5pi26ns.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/e37a674d-d116-4ef5-8f25-e825362db916_suv1.1om5pi26ns.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e37a674d-d116-4ef5-8f25-e825362db916_suv1.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1om5pi26ns"},{"Name":"integrity","Value":"sha256-/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"100971"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 06:00:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1om5pi26ns"},{"Name":"integrity","Value":"sha256-/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/e37a674d-d116-4ef5-8f25-e825362db916_suv1.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"100971"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:53:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\bbf8a717-662b-4e9a-9f6c-f38cdeda690a_suv1.jpg'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/e37a674d-d116-4ef5-8f25-e825362db916_suv1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e37a674d-d116-4ef5-8f25-e825362db916_suv1.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"100971"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 06:00:57 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"100971"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:53:53 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/e8be5b9d-dc44-4ac2-9844-be5db4043e98_suv1.1om5pi26ns.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e8be5b9d-dc44-4ac2-9844-be5db4043e98_suv1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1om5pi26ns"},{"Name":"integrity","Value":"sha256-/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/e8be5b9d-dc44-4ac2-9844-be5db4043e98_suv1.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"100971"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:28:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/e8be5b9d-dc44-4ac2-9844-be5db4043e98_suv1.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\e8be5b9d-dc44-4ac2-9844-be5db4043e98_suv1.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"100971"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022/xwxxEod8Bj1MX0OZSZngssp\u002BRIf4R7dTNyEpheTtrU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:28:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/f0a03a60-78bc-4611-a7c9-adc2957bb772_suv3.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\f0a03a60-78bc-4611-a7c9-adc2957bb772_suv3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"512010"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:28:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RentalCars.Api/uploads/f0a03a60-78bc-4611-a7c9-adc2957bb772_suv3.y2retj14ow.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\f0a03a60-78bc-4611-a7c9-adc2957bb772_suv3.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y2retj14ow"},{"Name":"integrity","Value":"sha256-ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E="},{"Name":"label","Value":"_content/RentalCars.Api/uploads/f0a03a60-78bc-4611-a7c9-adc2957bb772_suv3.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"512010"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ZgZEo5dMExSvBEYLrXsWzazI/xhOKfE\u002BUbG\u002BRAFgS8E=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 23:28:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

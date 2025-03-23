@@ -8,5 +8,7 @@ namespace RentalCars.Application.Interfaces
         Task<IEnumerable<Vehiculo>> GetAvailableVehiculosAsync(DateTime startDate, DateTime endDate);
 
         Task<IEnumerable<Vehiculo>> GetVehiculosByFiltersAsync(string? ubicacion = null, TipoDeVehiculo? tipoVehiculo = null);
+
+        Task<IEnumerable<Vehiculo>> GetVehiculosByPropietarioAsync(Guid propietarioId);
     }
 }

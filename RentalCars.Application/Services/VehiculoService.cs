@@ -147,6 +147,26 @@ namespace RentalCars.Application.Services;
         }
     }
 
+    public async Task<Result<List<VehiculoResponseDto>>> GetVehiculosByPropietarioAsync(
+    Guid propietarioId,
+    CancellationToken cancellationToken = default)
+    {
+        try
+        {
+            // Llamamos al repositorio para obtener los vehículos del propietario
+            var vehiculos = await _vehiculoRepository.GetVehiculosByPropietarioAsync(propietarioId);
+
+            // Convertimos la lista de entidades a DTOs
+            var vehiculoDtos = vehiculos.Select(MapToResponseDto).ToList();
+
+            return Result<List<VehiculoResponseDto>>.Success(vehiculoDtos);
+        }
+        catch (Exception ex)
+        {
+            return Result<List<VehiculoResponseDto>>.Failure(ex.Message);
+        }
+    }
+
 
     // Obtener detalles de un vehículo por su ID
     public async Task<Result<VehiculoDetailDto>> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)

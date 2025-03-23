@@ -5,6 +5,7 @@ C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalC
 C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.AssemblyInfoInputs.cache
 C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.AssemblyInfo.cs
 C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.csproj.CoreCompileInputs.cache
+C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.sourcelink.json
 C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.dll
 C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\refint\RentalCars.Domain.dll
 C:\Users\luis\source\repos\RentalCars\RentalCars.Domain\obj\Debug\net9.0\RentalCars.Domain.pdb
